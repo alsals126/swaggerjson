@@ -23,7 +23,8 @@
             "schema" : {
               "items" : {
                 "$ref" : "#/components/schemas/User"
-              }
+              },
+              "type" : "array"
             }
           }
         },
@@ -91,7 +92,6 @@
             "type" : "string"
           }
         },
-        "type" : "object",
         "xml" : {
           "name" : "Order"
         }
