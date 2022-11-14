@@ -23,8 +23,7 @@
             "schema" : {
               "items" : {
                 "$ref" : "#/components/schemas/User"
-              },
-              "type" : "array"
+              }
             }
           }
         },
@@ -67,7 +66,8 @@
         "properties" : {
           "complete" : {
             "default" : false,
-            "type" : "boolean"
+            "type" : "boolean",
+            "deprecated" : true
           },
           "id" : {
             "format" : "int64",
@@ -883,7 +883,7 @@
           "name" : "username",
           "required" : true,
           "schema" : {
-            "type" : "string"
+            "type" : "integer"
           },
           "style" : "simple"
         } ],
