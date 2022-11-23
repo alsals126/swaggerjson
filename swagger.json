@@ -342,18 +342,14 @@
         "parameters" : [ {
           "description" : "Status values that need to be considered for filter",
           "explode" : true,
-          "in" : "query",
+          "in" : "header",
           "name" : "status[]",
           "required" : true,
+          "allowEmptyValue" : true,
           "schema" : {
-            "items" : {
-              "default" : "available",
-              "enum" : [ "available", "pending", "sold" ],
-              "type" : "string"
-            },
-            "type" : "array"
-          },
-          "style" : "form"
+            "type" : "string",
+            "minLength" : 5
+          }
         } ],
         "responses" : {
           "200" : {
